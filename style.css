@@ -11,19 +11,38 @@ body {
 }
 
 header {
-     background-color: transparent;
+     background-color: #FFF5DC;
+     border-radius: 0.3rem;
     width: 100%;
     height: 15vh;
     display: flex;
     justify-content:space-between;
+    z-index: 10;
     position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+    display: flex;
+}
+
+.paw{
+    height: 3.4rem;
+    margin-top:2.3rem ;
 }
 
 h1 {
 font-size: 4rem;
 color: #FBC02D;
 font-weight: 700;
-margin: 0.6rem 4rem;
+margin-top: 0.6 rem;
+}
+
+.sticker {
+height: 5.8rem;
+width: 6rem;
+
 }
 
 .head-btns{
@@ -39,17 +58,60 @@ margin: 0.6rem 4rem;
     font-weight: 500;
     font-size: 1.05rem;
     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .h-btn:hover {
     color: #F4511E;
-    font-size: 1.2rem;
     font-weight: 600;
+    transform: scale(1.15); 
 }
 .landing {
- background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/Landing_background.webp');
+ background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('./assets/Landing_background.webp');
      background-attachment: fixed;
     height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+.info{
+    color: #FFF5DC;
+    font-size: 1.3rem;
+    font-weight: 650;
+    
+}
+
+.info i {
+    color:#FBC02D ;
+}
+
+.msg {
+    height: 7rem;
+   display: flex;
+   position: relative;
+   top: 60%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.land-btn {
+    border: 2px solid #F4511E; 
+    height: 3.4rem;
+    width: 14rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    color: #F4511E;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+     transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.land-btn:hover {
+    background-color: #F4511E;
+    color: #FFF5DC;
+    border: none;
+    transform: scale(1.05);
 }
