@@ -8,6 +8,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #FFF5DC;
+  cursor: url('./assets/cursor.cur') , auto ;
 }
 
 header {
@@ -32,7 +33,7 @@ header {
     margin-top:2.3rem ;
 }
 
-h1 {
+.title h1 {
 font-size: 4rem;
 color: #FBC02D;
 font-weight: 700;
@@ -57,13 +58,13 @@ width: 6rem;
     color: #FF7043;
     font-weight: 500;
     font-size: 1.05rem;
-    cursor: pointer;
      transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .h-btn:hover {
     color: #F4511E;
     font-weight: 600;
+  cursor: url('./assets/cursor\ \(1\).cur') , pointer;
     transform: scale(1.15); 
 }
 .landing {
@@ -81,7 +82,7 @@ width: 6rem;
     
 }
 
-.info i {
+.icon {
     color:#FBC02D ;
 }
 
@@ -105,7 +106,6 @@ width: 6rem;
     font-size: 1.2rem;
     font-weight: 600;
     background-color: transparent;
-    cursor: pointer;
      transition: background-color 0.3s ease-out, transform 0.3s ease-out;
 }
 
@@ -113,5 +113,120 @@ width: 6rem;
     background-color: #F4511E;
     color: #FFF5DC;
     border: none;
+      cursor: url('./assets/cursor\ \(1\).cur') , pointer;
     transform: scale(1.05);
 }
+
+  .cards {
+    height: 150vh;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+    url('./assets/Landing_background.webp');
+     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.facts{
+    margin: 3.2rem;
+    width: 18%;
+    height: 30vh;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.image {
+   border-radius: 0.7rem;
+   height: 90%;
+   width: 90%;  
+   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+} 
+
+.facts {
+  cursor: url('./assets/cursor\ \(1\).cur') , pointer;
+
+}
+
+
+/* Inner card with flipping logic */
+ .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.7rem;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+} 
+
+.facts:hover .card-inner {
+  transform: rotateY(180deg);
+} 
+
+/* Front & back of the card */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF7043;
+}
+
+
+/* Back face */
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #FF8A65;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem; 
+ } 
+
+ .about {
+  height: 75vh;
+  margin: 3rem;
+ }
+
+ .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ #cat {
+  height: 8rem;
+
+ }
+
+ .head h1 {
+  color: #FF7043;
+  font-weight: 700;
+  font-size: 2.5rem;
+ }
+
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.3rem;
+  color: #212121;
+ }
+
+ #paws {
+  margin-top:2rem ;
+  height: 8rem;
+ }
+
+ footer {
+  height: 60vh;
+ }
