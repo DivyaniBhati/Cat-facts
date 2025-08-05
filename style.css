@@ -58,7 +58,7 @@ width: 6rem;
     color: #FF7043;
     font-weight: 500;
     font-size: 1.05rem;
-     transition: background-color 0.3s ease, transform 0.3s ease;
+     transition:background-color 0.3s ease, transform 0.3s ease;
 }
 
 .h-btn:hover {
@@ -106,7 +106,7 @@ width: 6rem;
     font-size: 1.2rem;
     font-weight: 600;
     background-color: transparent;
-     transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+     transition:background-color 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .land-btn:hover {
@@ -228,7 +228,82 @@ width: 6rem;
  }
 
  .feedback {
-  height: 40vh;
+  height: 48vh;
+ }
+
+ .uper {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .uper h3 {
+ margin-top: 3rem;
+ font-size: 1.5rem;
+  color: #FF7043;
+ }
+
+ .uper h4 {
+margin-top: 1rem;
+color: rgb(80, 79, 79);
+ }
+
+  .form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+ }
+
+ .styled-textarea {
+ height: 2.1rem;
+ width: 25rem;
+ font-size: 1rem;
+ color: #212121;
+ border: 0.5px solid #f57c00;
+ border-radius: 0.4rem;
+ letter-spacing: 1px;
+line-height: 1.5;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
+ }
+
+ .styled-textarea:focus {
+  border-color: #f57c00;
+  box-shadow: 0 0 8px rgba(245, 124, 0, 0.5);
+  outline: none; /* removes default focus outline */
+}
+
+.styled-textarea:hover {
+    box-shadow: 0 0 8px rgba(245, 124, 0, 0.5);
+}
+
+/* For WebKit browsers */
+.styled-textarea::-webkit-scrollbar {
+  width: 8px;
+}
+.styled-textarea::-webkit-scrollbar-thumb {
+  background-color: #FF7043;
+  border-radius: 4px;
+}
+
+ .form button {
+  margin: 1rem;
+ height: 2.5rem;
+ width: 6rem;
+ font-size: 1rem;
+ border: none;
+ background-color: #FF7043;
+ color: #FFF5DC;
+ border-radius: 1.4rem;
+    transition:background-color 0.3s ease, transform 0.3s ease;
+ }
+
+ .form button:hover {
+   cursor: url('./assets/cursor\ \(1\).cur') , pointer; 
+  background-color: #F4511E;
+  font-weight: 600;
+  transform: scale(1.05);
  }
 
  footer {
@@ -240,13 +315,6 @@ width: 6rem;
   color: #FFF5DC;
   background-color: #212121;
    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- }
-
- .uper {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -292,7 +360,7 @@ width: 6rem;
   color: black;
  }
  .insta:hover {
-  color: rgb(196, 84, 10);
+  color: rgb(243, 121, 40);
  }
  .mail:hover{
   color: rgb(196, 191, 191);
