@@ -227,6 +227,73 @@ width: 6rem;
   height: 8rem;
  }
 
+ .feedback {
+  height: 40vh;
+ }
+
  footer {
-  height: 60vh;
+  height: 50vh;
+ }
+
+ .foot {
+  height: 90%;
+  color: #FFF5DC;
+  background-color: #212121;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .uper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ footer h2 {
+  font-size: 2.5rem;
+ }
+
+ .lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+ }
+
+ .footer-icon {
+  background-color: #FBC02D;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   cursor: url('./assets/cursor\ \(1\).cur') , pointer;
+ }
+
+ .copyright {
+  height: 10%;
+  color: #888;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .meta:hover {
+  color: blue;
+ }
+ .X:hover {
+  color: black;
+ }
+ .insta:hover {
+  color: rgb(196, 84, 10);
+ }
+ .mail:hover{
+  color: rgb(196, 191, 191);
  }
