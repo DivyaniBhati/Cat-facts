@@ -20,23 +20,23 @@
             <img class="sticker" src="./assets/cat-5-Picsart-BackgroundChanger.png">
            </div>
         <div class="head-btns">
-      <p type= "button" class="h-btn">Login</p>
-      <p  type= "button" class="h-btn">Sign-Up</p>
-      <p  type= "button" class="h-btn">About</p>
-      <p  type= "button" class="h-btn">Contact-Us</p>
+      <a type= "button" class="h-btn" href="#">Login</a>
+      <a  type= "button" class="h-btn" href="#">Sign-Up</a>
+      <a  type= "button" class="h-btn" href="#About-section">About</a>
+      <a  type= "button" class="h-btn" href="#Connect">Contact-Us</a>
         </div>
         
     </header>
     <main>
-        <div class="landing">
+        <section class="landing">
            <div class="msg">
              <p class="info">We will provide you with everything that you want to know, to become a cat parent 
                 <i class="fa-solid fa-paw icon"></i> </p>
                 <button class="land-btn">Get started</button>
            </div>
-        </div>
+          </section>
         
-         <div class="about">
+         <section class="about" id="About-section"  data-aos="fade-in" data-aos-duration="2000"> 
      <div class="content">
       <div class="head">
        <img src="./assets/cat-1-Picsart-BackgroundChanger.jpeg" id="cat">
@@ -59,9 +59,9 @@
         </p>
         <img src="./assets/paw-1-Picsart-BackgroundChanger.png" id="paws">
      </div>
-     </div>
+    </section>
 
-         <div class="cards"> 
+         <section class="cards"> 
          
            <div class="facts">
              <div class="card-inner">
@@ -162,10 +162,9 @@
            </div>
             </div>
              </div>
-        </div>
-    </main>
+         </section>
 
-    <div class="feedback">
+         <section class="feedback">
        <div class="uper">
       <h3>Please do leave your valuable comments here!</h3>
       <h4>We would love to hear from you  <i class="fa-solid fa-paw icon"></i> </h4>
@@ -175,9 +174,11 @@
    <button type="button">submit</button>
         </div>
        </div>
-    </div>
+      </section>
+    </main>
+
     <footer>
-    <div class="foot">
+    <section class="foot" id="Connect"  data-aos="fade-in" data-aos-duration="2000">
       <h2>Connect with us</h2>
      <div class="lower">
       <div class="footer-icon meta"><i class="fa-brands fa-meta"></i></div>
@@ -185,10 +186,43 @@
         <div class="footer-icon insta"><i class="fa-brands fa-instagram"></i></div>
         <div class="footer-icon mail"><i class="fa-solid fa-envelope"></i></div>
      </div>
-    </div>
+    </section>
      <div class="copyright">
       <p>Copyright &copy; 2015 by Cat Facts. All rights reserved.</p>
      </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 </html>
