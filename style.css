@@ -139,6 +139,7 @@ width: 6rem;
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+      cursor: url('./assets/cursor\ \(1\).cur') , pointer;
 }
 
 .image {
@@ -147,12 +148,6 @@ width: 6rem;
    width: 90%;  
    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 } 
-
-.facts {
-  cursor: url('./assets/cursor\ \(1\).cur') , pointer;
-
-}
-
 
 /* Inner card with flipping logic */
  .card-inner {
@@ -238,9 +233,9 @@ width: 6rem;
  .uper {
     display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
  }
 
  .uper h3 {
@@ -372,54 +367,118 @@ line-height: 1.5;
  }
 
  /* Media Queries */
-@media only screen and (min-width:1463px)  {
-  .h-btn {
-    font-size: 1.6rem;
-    font-weight: 520;
-  }
-  .title h1 {
-    font-size: 6.5rem;
-  }
-  .sticker {
-   height: 10rem;
-   width: 10rem;
-  }
-  .paw {
-    height: 5.2rem;
-  }
+ @media only screen and (max-width:934px)  {
   .info{
-   font-size: 1.9rem;
-   font-weight: 600;
+    font-size: 1.2rem;
   }
-  .land-btn {
-     height: 4rem;
-    width: 14rem;
-    font-size: 1.4rem;
-      border: 3px solid #F4511E; 
+ }
+@media only screen and (max-width:862px)  {
+  .info{
+    font-size: 1.1rem;
+  }
+  .head-btns{
+    visibility: hidden;
+  }
+ }
+ @media only screen and (max-width:790px)  {
+  .info{
+    font-size: 1rem;
+  }
+ }
+
+  @media only screen and (max-width:576px){
+   .title h1 {
+    font-size: 2.5rem;
+   }
+   .sticker {
+    height: 4.2rem;
+    width: 4.2rem;
+   }
+   .head-btns{
+    visibility: hidden;
+   }
+   .paw{
+    height: 3rem;
+}
+.info{
+    font-size: 0.8rem;
+}
+.land-btn{
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+.content p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.one , .two , .three , .four, .five{
+  visibility: hidden;
+}
+.cards {
+  height: 100vh;
+}
+.facts{
+    margin: 3.2rem;
+    width: 32%;
+    height: 30vh;
+}
+
+ .uper h3 {
+ font-size: 1.4rem;
+ }
+ .styled-textarea {
+ height: 2.1rem;
+ width: 22rem;
+ }
   }
 
 
-  .about{
-   height: 75vh;
+  @media only screen and  (max-width:768px){
+     .title h1 {
+    font-size: 2.95rem;
+   }
+   .sticker {
+    height: 4.4rem;
+    width: 4.4rem;
+   }
+   .head-btns{
+    visibility: hidden;
+   }
+   .paw{
+    height: 2.8rem;
+}
+.info{
+    font-size: 0.8rem;
+}
+.land-btn{
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+.content p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.one , .two , .three , .four, .five{
+  visibility: hidden;
+}
+.cards {
+  height: 100vh;
+}
+.facts{
+    margin: 3.2rem;
+    width: 32%;
+    height: 30vh;
+}
+
+ .uper h3 {
+ font-size: 1.4rem;
+ }
+ .styled-textarea {
+ height: 2.1rem;
+ width: 22rem;
+ }
   }
-   #cat {
-  height: 10rem;
-
- }
-
- .head h1 {
-  color: #FF7043;
-  font-weight: 700;
-  font-size: 3.8rem;
- }
-
- .content {
-  line-height: 3rem;
-  font-size: 1.4rem;
- }
-
- #paws {
-  margin-top:1.5rem ;
-  height: 11.5rem;
- }
- }
+ 
+ 
