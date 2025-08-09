@@ -386,53 +386,6 @@ line-height: 1.5;
   }
  }
 
-  @media only screen and (max-width:576px){
-   .title h1 {
-    font-size: 2.5rem;
-   }
-   .sticker {
-    height: 4.2rem;
-    width: 4.2rem;
-   }
-   .head-btns{
-    visibility: hidden;
-   }
-   .paw{
-    height: 3rem;
-}
-.info{
-    font-size: 0.8rem;
-}
-.land-btn{
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
-}
-.content p {
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
-.one , .two , .three , .four, .five{
-  visibility: hidden;
-}
-.cards {
-  height: 100vh;
-}
-.facts{
-    margin: 3.2rem;
-    width: 32%;
-    height: 30vh;
-}
-
- .uper h3 {
- font-size: 1.4rem;
- }
- .styled-textarea {
- height: 2.1rem;
- width: 22rem;
- }
-  }
-
 
   @media only screen and  (max-width:768px){
      .title h1 {
@@ -480,5 +433,53 @@ line-height: 1.5;
  width: 22rem;
  }
   }
+
+   @media only screen and (max-width:576px){
+   .title h1 {
+    font-size: 2.3rem;
+   }
+   .sticker {
+    height: 4.2rem;
+    width: 4.2rem;
+   }
+   .head-btns{
+    visibility: hidden;
+   }
+   .paw{
+    height: 3rem;
+}
+.info{
+    font-size: 0.8rem;
+}
+.land-btn{
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+}
+/* .content p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.one , .two , .three , .four, .five{
+  visibility: hidden;
+}
+.cards {
+  height: 100vh;
+}
+.facts{
+    margin: 3.2rem;
+    width: 32%;
+    height: 30vh;
+}
+
+ .uper h3 {
+ font-size: 1.4rem;
+ }
+ .styled-textarea {
+ height: 2.1rem;
+ width: 22rem;
+ } */
+  }
+
  
  
