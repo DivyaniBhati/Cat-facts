@@ -136,10 +136,19 @@ width: 6rem;
     height: 30vh;
     border-radius: 0.7rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     perspective: 1000px;
       cursor: url('./assets/cursor\ \(1\).cur') , pointer;
+}
+
+.btns{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .image {
