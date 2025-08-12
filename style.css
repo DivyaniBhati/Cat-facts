@@ -145,12 +145,31 @@ width: 6rem;
 
 .btns{
   display: flex;
-  margin-top: 1rem;
   justify-content: center;
   align-items: center;
   display: none;
 }
 
+.btns button{
+  height: 2.5rem;
+  width: 6.5rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #F4511E;
+  background-color: transparent;
+  color: #F4511E;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor:url('./assets/cursor\ \(1\).cur') , pointer ;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.btns button:hover{
+  background-color: #F4511E;
+    color: #FFF5DC;
+    border: none;
+  transform: scale(1.05);
+}
 .image {
    border-radius: 0.7rem;
    height: 90%;
