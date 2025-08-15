@@ -155,7 +155,13 @@ width: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+   /* Start hidden */
+  opacity: 0;
+  transform: translateY(15px);
+  pointer-events: none;
+
+   /* Smooth animation */
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .btns button{
@@ -178,6 +184,20 @@ width: 6rem;
     border: none;
   transform: scale(1.05);
 }
+
+.btns.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.2s; /* Wait for card flip to finish */
+}
+
+.btns.hide {
+  opacity: 0;
+  transform: translateY(15px);
+  pointer-events: none;
+  transition-delay: 0s; /* Hide instantly when leaving */
+}
+
 .image {
    border-radius: 0.7rem;
    height: 90%;
@@ -195,9 +215,9 @@ width: 6rem;
   transition: transform 0.6s ease-in-out;
 } 
 
-.facts:hover .card-inner {
+/* .facts:hover .card-inner {
   transform: rotateY(180deg);
-} 
+}  */
 
 /* Front & back of the card */
 .card-front, .card-back {
@@ -220,7 +240,7 @@ width: 6rem;
   color: white;
   font-size: 1.1rem;
   text-align: center;
-  padding: 0.5rem; 
+   padding: 0.5rem;  
  } 
 
  .about {
@@ -470,7 +490,7 @@ line-height: 1.5;
  }
   }
 
-   @media only screen and (max-width:576px){
+   /* @media only screen and (max-width:576px){
    .title h1 {
     font-size: 2.3rem;
    }
@@ -515,7 +535,113 @@ line-height: 1.5;
  height: 2.1rem;
  width: 22rem;
  } */
+
+/* @media only screen and (max-width: 548px) {
+  /* Header 
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
   }
 
- 
- 
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .sticker {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .head-btns {
+    display: none;
+  }
+
+  .paw {
+    height: 2.2rem;
+  }
+
+  /* Landing section 
+  .info {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .msg {
+    top: auto;
+    padding-top: 2rem;
+  }
+
+  .land-btn {
+    width: 90%;
+    max-width: 12rem;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+
+  /* Cards stack vertically 
+  .cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .facts {
+    width: 90% !important;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* About section 
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Feedback form 
+  .form {
+    flex-direction: column;
+  }
+
+  .styled-textarea {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .form button {
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  /* Footer 
+  footer {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .foot {
+    padding: 1rem;
+  }
+
+  .lower {
+    flex-wrap: wrap;
+  }
+
+  .footer-icon {
+    margin: 0.5rem;
+  }
+} 
+  */
